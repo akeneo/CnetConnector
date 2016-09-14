@@ -19,7 +19,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "akeneo/pim-community-dev": "~1.6.0"
+        "akeneo/pim-community-dev": "~1.6.0",
+        "akeneo-labs/custom-entity-bundle": "1.8.*"
     },
     "require-dev": {
         "phpspec/phpspec": "3.0.0",
