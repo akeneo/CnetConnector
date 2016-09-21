@@ -2,7 +2,6 @@
 
 namespace Pim\Bundle\CnetConnectorBundle\Entity;
 
-use Pim\Bundle\CnetConnectorBundle\BrandInterface;
 use Pim\Bundle\CustomEntityBundle\Entity\AbstractCustomEntity;
 
 /**

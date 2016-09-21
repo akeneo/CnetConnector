@@ -1,8 +1,6 @@
 <?php
 
-namespace Pim\Bundle\CnetConnectorBundle;
-
-use Pim\Bundle\CnetConnectorBundle\Entity\LogoInterface;
+namespace Pim\Bundle\CnetConnectorBundle\Entity;
 
 /**
  * @author Romain Monceau <romain@akeneo.com>
