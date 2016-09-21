@@ -2,8 +2,6 @@
 
 namespace Pim\Bundle\CnetConnectorBundle\Entity;
 
-use Pim\Bundle\CnetConnectorBundle\BrandInterface;
-
 /**
  * @author Romain Monceau <romain@akeneo.com>
  */
