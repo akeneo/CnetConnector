@@ -1,0 +1,31 @@
+datagrid:
+    manufacturer:
+        options:
+            entityHint: manufacturer
+        source:
+            type: pim_datasource_default
+            entity: Pim\Bundle\CnetConnectorBundle\Entity\Manufacturer
+            repository_method: createDatagridQueryBuilder
+        columns:
+            code:
+                label: code
+            label:
+                label: label
+        filters:
+            columns:
+                code:
+                    type: string
+                    label: Code
+                    data_name: rd.code
+                label:
+                    type: string
+                    label: Label
+                    data_name: rd.label
+        sorters:
+            columns:
+                code:
+                    data_name: rd.code
+                label:
+                    data_name: rd.label
+            default:
+                code: '%oro_datagrid.extension.orm_sorter.class%::DIRECTION_ASC'
