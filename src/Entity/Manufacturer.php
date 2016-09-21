@@ -2,6 +2,7 @@
 
 namespace Pim\Bundle\CnetConnectorBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Pim\Bundle\CustomEntityBundle\Entity\AbstractCustomEntity;
 
 /**
@@ -14,8 +15,16 @@ class Manufacturer extends AbstractCustomEntity implements ManufacturerInterface
     /** @var string */
     protected $label;
 
-    /** @var BrandInterface */
-    protected $brand;
+    /** @var BrandInterface[] */
+    protected $brands;
+
+    /**
+     * Manufacturer constructor.
+     */
+    public function __construct()
+    {
+        $this->brands = new ArrayCollection();
+    }
 
     /**
      * {@inheritdoc}
