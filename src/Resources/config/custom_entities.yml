@@ -1,0 +1,19 @@
+custom_entities:
+    brand:
+        entity_class: Pim\Bundle\CnetConnectorBundle\Entity\Brand
+        actions:
+            index:
+                service: pim_custom_entity.action.index
+            edit:
+                form_type: ~
+            create:
+                form_type: ~
+    manufacturer:
+        entity_class: Pim\Bundle\CnetConnectorBundle\Entity\Manufacturer
+        actions:
+            index:
+                service: pim_custom_entity.action.index
+            edit:
+                form_type: ~
+            create:
+                form_type: ~
