@@ -1,0 +1,34 @@
+measures_config:
+    PrinterMediaType:
+        units:
+            SHEET:
+                symbol: 'sheet'
+            ENVELOPE:
+                symbol: 'envelope'
+            ROLL:
+                symbol: 'roll'
+            STICKER:
+                symbol: 'sticker'
+            SLIDE:
+                symbol: 'slide'
+            PAGE:
+                unece_code: 'ZP'
+                symbol: 'page'
+            CARD:
+                unece_code: 'CG'
+                symbol: 'card'
+            PHOTO:
+                symbol: 'photo'
+            CASSETTE:
+                symbol: 'cassette'
+            FILE:
+                symbol: 'file'
+            TRANSPARENCE:
+                symbol: 'transparence'
+            DISK:
+                unece_code: 'DC'
+                symbol: 'disk'
+            LABEL:
+                symbol: 'label'
+            PIECE:
+                symbol: 'piece'

@@ -1,0 +1,9 @@
+measures_config:
+    VideoSpeed:
+        units:
+            FRAME_PER_SECOND:
+                symbol: 'fps'
+                name: 'frame per second'
+            IMAGE_PER_SECOND:
+                symbol: 'img/s'
+                name: 'image per second'

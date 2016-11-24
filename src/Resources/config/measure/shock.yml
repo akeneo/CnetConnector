@@ -1,0 +1,35 @@
+measures_config:
+    Shock:
+        units:
+            G:
+                symbol: 'g'
+            G_AT_0.3MS_HSP:
+                symbol: 'g @ 0.3ms half-sine pulse'
+            G_AT_0.5MS_HSP:
+                symbol: 'g @ 0.5ms half-sine pulse'
+            G_AT_1MS_HSP:
+                symbol: 'g @ 1ms half-sine pulse'
+            G_AT_2MS_HSP:
+                symbol: 'g @ 2ms half-sine pulse'
+            G_AT_2.7MS_HSP:
+                symbol: 'g @ 2.7ms half-sine pulse'
+            G_AT_3MS_HSP:
+                symbol: 'g @ 3ms half-sine pulse'
+            G_AT_5MS_HSP:
+                symbol: 'g @ 5ms half-sine pulse'
+            G_AT_8MS_HSP:
+                symbol: 'g @ 8ms half-sine pulse'
+            G_AT_11MS_HSP:
+                symbol: 'g @ 11ms half-sine pulse'
+            G_AT_21MS_HSP:
+                symbol: 'g @ 21ms half-sine pulse'
+            G_AT_22MS_HSP:
+                symbol: 'g @ 22ms half-sine pulse'
+            G_AT_0.5MS:
+                symbol: 'g @ 0.5 ms'
+            G_AT_1MS:
+                symbol: 'g @ 1ms'
+            G_AT_2MS:
+                symbol: 'g @ 2ms'
+            G_AT_10MS:
+                symbol: 'g @ 10ms duration'

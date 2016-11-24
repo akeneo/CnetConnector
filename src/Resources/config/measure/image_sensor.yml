@@ -1,0 +1,13 @@
+measures_config:
+    ImageSensor:
+        units:
+            CCD:
+                symbol: 'CCD'
+            CMOS:
+                symbol: 'CMOS'
+            MOS:
+                symbol: 'MOS'
+            KPIX:
+                symbol: 'Kpix'
+            MPIX:
+                symbol: 'Mpix'

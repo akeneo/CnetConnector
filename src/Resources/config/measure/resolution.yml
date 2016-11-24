@@ -1,0 +1,9 @@
+measures_config:
+    Resolution:
+        units:
+            CPI:
+                symbol: 'cpi'
+            LPI:
+                symbol: 'lpi'
+            PIN:
+                symbol: 'pin'

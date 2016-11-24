@@ -1,0 +1,12 @@
+measures_config:
+    SoundPressure:
+        units:
+            DB_PER_MILLIWATT:
+                symbol: 'dB/mW'
+                name: 'Decibel per milliwatt'
+            DB_PER_WATT:
+                symbol: 'dB/W'
+                name: 'Decibel per watt'
+            MILLIVOLT_PER_PASCAL:
+                symbol: 'mV/Pa'
+                name: 'millivolt per pascal'

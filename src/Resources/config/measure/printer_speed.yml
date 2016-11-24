@@ -1,0 +1,54 @@
+measures_config:
+    PrinterSpeed:
+        units:
+            CHAR_PER_MIN:
+                symbol: 'char/min'
+                name: 'characters per minute'
+            LINE_PER_MIN:
+                symbol: 'line/min'
+                name: 'lines per minute'
+            PPM:
+                symbol: 'ppm'
+                name: 'pages per minute'
+            MIN_PER_PAGE:
+                symbol: 'min/page'
+                name: 'minutes per page'
+            CHAR_PER_SEC:
+                symbol: 'char/sec'
+                name: 'characters per second'
+            LINE_PER_SEC:
+                symbol: 'line/sec'
+                name: 'lines per second'
+            SQUARE_METER_PER_HOUR:
+                symbol: 'm²/h'
+                name: 'square meter per hour'
+            INCH_PER_MIN:
+                symbol: 'in/min'
+                name: 'inch per minute'
+            DISK_PER_MIN:
+                symbol: 'disks/min'
+                name: 'disks per minute'
+            CARD_PER_HOUR:
+                symbol: 'cards/hour'
+                name: 'cards per hour'
+            LABEL_PER_MIN:
+                symbol: 'labels/min'
+                name: 'labels per minute'
+            SPM:
+                symbol: 'spm'
+                name: 'sides per minute'
+            IPM:
+                symbol: 'ipm'
+                name: 'images per minute'
+            MS_PER_LINE:
+                symbol: 'ms/line'
+                name: 'milliseconds per line'
+            SEC_PER_PAGE:
+                symbol: 's/page'
+                name: 'second per page'
+            MM_PER_SECOND:
+                symbol: 'mm/sec'
+                name: 'millimeter per second'
+            SEC_PER_SCAN:
+                symbol: 'sec/scan'
+                name: 'scan per page'
