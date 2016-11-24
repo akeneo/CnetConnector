@@ -1,99 +1,148 @@
 measures_config:
     Vibration:
+        standard: G_AT_5_100HZ
         units:
             G_AT_5_100HZ:
                 symbol: 'g @ 5-100 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_150HZ:
                 symbol: 'g @ 5-150 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_17HZ:
                 symbol: 'g @ 5-17 Hz'
+                convert: [{'mul': 1}]
             G_AT_17_500HZ:
                 symbol: 'g @ 17-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_60_500HZ:
                 symbol: 'g @ 60-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_27_60HZ:
                 symbol: 'g @ 27-60 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_27HZ:
                 symbol: 'g @ 5-27 Hz'
+                convert: [{'mul': 1}]
             G_AT_50_500HZ:
                 symbol: 'g @ 50-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_25_250HZ:
                 symbol: 'g @ 25-250 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_500HZ:
                 symbol: 'g @ 5-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_20_400HZ:
                 symbol: 'g @ 20-400 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_2000HZ:
                 symbol: 'g @ 5-2000 Hz'
+                convert: [{'mul': 1}]
             G_AT_RMS:
                 symbol: 'g @ RMS'
+                convert: [{'mul': 1}]
             G_AT_2_200HZ:
                 symbol: 'g @ 2-200 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_300HZ:
                 symbol: 'g @ 5-300 Hz'
+                convert: [{'mul': 1}]
             G_AT_8_300HZ:
                 symbol: 'g @ 8-300 Hz'
+                convert: [{'mul': 1}]
             G_AT_10_300HZ:
                 symbol: 'g @ 10-300 Hz'
+                convert: [{'mul': 1}]
             G_AT_10_500HZ:
                 symbol: 'g @ 10-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_20_300HZ:
                 symbol: 'g @ 20-300 Hz'
+                convert: [{'mul': 1}]
             G_AT_20_500HZ:
                 symbol: 'g @ 20-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_400HZ:
                 symbol: 'g @ 5-400 Hz'
+                convert: [{'mul': 1}]
             G_AT_10_2000HZ:
                 symbol: 'g @ 10-2000 Hz'
+                convert: [{'mul': 1}]
             G_AT_22_375HZ:
                 symbol: 'g @ 22-375 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_350HZ:
                 symbol: 'g @ 5-350 Hz'
+                convert: [{'mul': 1}]
             G_AT_10_100HZ:
                 symbol: 'g @ 10-100 Hz'
+                convert: [{'mul': 1}]
             G_AT_22_300HZ:
                 symbol: 'g @ 22-300 Hz'
+                convert: [{'mul': 1}]
             G_AT_22_500HZ:
                 symbol: 'g @ 22-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_300_500HZ:
                 symbol: 'g @ 300-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_10_250HZ:
                 symbol: 'g @ 10-250 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_50HZ:
                 symbol: 'g @ 5-50 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_250HZ:
                 symbol: 'g @ 5-250 Hz'
+                convert: [{'mul': 1}]
             G_AT_22_400HZ:
                 symbol: 'g @ 22-400 Hz'
+                convert: [{'mul': 1}]
             G_AT_33_375HZ:
                 symbol: 'g @ 33-375 Hz'
+                convert: [{'mul': 1}]
             G_AT_29_375HZ:
                 symbol: 'g @ 29-375 Hz'
+                convert: [{'mul': 1}]
             G_AT_3_200HZ:
                 symbol: 'g @ 3-200 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_35HZ:
                 symbol: 'g @ 5-35 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_1000HZ:
                 symbol: 'g @ 5-1000 Hz'
+                convert: [{'mul': 1}]
             G_AT_3_500HZ:
                 symbol: 'g @ 3-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_20_2000HZ:
                 symbol: 'g @ 20-2000 Hz'
+                convert: [{'mul': 1}]
             G_AT_15_500HZ:
                 symbol: 'g @ 15-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_55_500HZ:
                 symbol: 'g @ 55-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_800HZ:
                 symbol: 'g @ 5-800 Hz'
+                convert: [{'mul': 1}]
             G_AT_7_800HZ:
                 symbol: 'g @ 7-800 Hz'
+                convert: [{'mul': 1}]
             G_AT_40_2000HZ:
                 symbol: 'g @ 40-2000 Hz'
+                convert: [{'mul': 1}]
             G_AT_7_200HZ:
                 symbol: 'g @ 7-200 Hz'
+                convert: [{'mul': 1}]
             G_AT_5_700HZ:
                 symbol: 'g @ 5-700 Hz'
+                convert: [{'mul': 1}]
             G_AT_2_500HZ:
                 symbol: 'g @ 2-500 Hz'
+                convert: [{'mul': 1}]
             G_AT_30_400HZ:
                 symbol: 'g @ 30-400 Hz'
+                convert: [{'mul': 1}]

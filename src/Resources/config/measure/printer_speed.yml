@@ -1,54 +1,72 @@
 measures_config:
     PrinterSpeed:
+        standard: PPM
         units:
             CHAR_PER_MIN:
                 symbol: 'char/min'
                 name: 'characters per minute'
+                convert: [{'mul': 1}]
             LINE_PER_MIN:
                 symbol: 'line/min'
                 name: 'lines per minute'
+                convert: [{'mul': 1}]
             PPM:
                 symbol: 'ppm'
                 name: 'pages per minute'
+                convert: [{'mul': 1}]
             MIN_PER_PAGE:
                 symbol: 'min/page'
                 name: 'minutes per page'
+                convert: [{'mul': 1}]
             CHAR_PER_SEC:
                 symbol: 'char/sec'
                 name: 'characters per second'
+                convert: [{'mul': 1}]
             LINE_PER_SEC:
                 symbol: 'line/sec'
                 name: 'lines per second'
+                convert: [{'mul': 1}]
             SQUARE_METER_PER_HOUR:
                 symbol: 'm²/h'
                 name: 'square meter per hour'
+                convert: [{'mul': 1}]
             INCH_PER_MIN:
                 symbol: 'in/min'
                 name: 'inch per minute'
+                convert: [{'mul': 1}]
             DISK_PER_MIN:
                 symbol: 'disks/min'
                 name: 'disks per minute'
+                convert: [{'mul': 1}]
             CARD_PER_HOUR:
                 symbol: 'cards/hour'
                 name: 'cards per hour'
+                convert: [{'mul': 1}]
             LABEL_PER_MIN:
                 symbol: 'labels/min'
                 name: 'labels per minute'
+                convert: [{'mul': 1}]
             SPM:
                 symbol: 'spm'
                 name: 'sides per minute'
+                convert: [{'mul': 1}]
             IPM:
                 symbol: 'ipm'
                 name: 'images per minute'
+                convert: [{'mul': 1}]
             MS_PER_LINE:
                 symbol: 'ms/line'
                 name: 'milliseconds per line'
+                convert: [{'mul': 1}]
             SEC_PER_PAGE:
                 symbol: 's/page'
                 name: 'second per page'
+                convert: [{'mul': 1}]
             MM_PER_SECOND:
                 symbol: 'mm/sec'
                 name: 'millimeter per second'
+                convert: [{'mul': 1}]
             SEC_PER_SCAN:
                 symbol: 'sec/scan'
                 name: 'scan per page'
+                convert: [{'mul': 1}]

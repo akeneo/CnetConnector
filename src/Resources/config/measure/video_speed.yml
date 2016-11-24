@@ -1,9 +1,12 @@
 measures_config:
     VideoSpeed:
+        standard: FRAME_PER_SECOND
         units:
             FRAME_PER_SECOND:
                 symbol: 'fps'
                 name: 'frame per second'
+                convert: [{'mul': 1}]
             IMAGE_PER_SECOND:
                 symbol: 'img/s'
                 name: 'image per second'
+                convert: [{'mul': 1}]

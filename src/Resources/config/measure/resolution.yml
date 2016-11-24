@@ -1,9 +1,13 @@
 measures_config:
     Resolution:
+        standard: CPI
         units:
             CPI:
                 symbol: 'cpi'
+                convert: [{'mul': 1}]
             LPI:
                 symbol: 'lpi'
+                convert: [{'mul': 1}]
             PIN:
                 symbol: 'pin'
+                convert: [{'mul': 1}]
