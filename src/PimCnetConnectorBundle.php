@@ -2,6 +2,8 @@
 
 namespace Pim\Bundle\CnetConnectorBundle;
 
+use Pim\Bundle\ExtendedMeasureBundle\DependencyInjection\MeasuresCompilerPass;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
