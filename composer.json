@@ -15,12 +15,25 @@
             "type": "vcs",
             "url": "https://github.com/akeneo/pim-community-dev.git",
             "branch": "master"
+        },
+
+        {
+            "type": "vcs",
+            "url": "https://github.com/akeneo/ExtendedAttributeTypeBundle.git",
+            "branch": "master"
+        },
+
+        {
+            "type": "vcs",
+            "url": "https://github.com/akeneo/ExtendedMeasureBundle.git",
+            "branch": "master"
         }
     ],
     "require": {
         "akeneo/pim-community-dev": "~1.6.0",
         "akeneo-labs/custom-entity-bundle": "1.8.*",
-        "akeneo/extended-measure-bundle": "dev-master@dev"
+        "akeneo/extended-measure-bundle": "dev-master@dev",
+        "akeneo/extended-attribute-type": "dev-master@dev"
     },
     "require-dev": {
         "phpspec/phpspec": "3.0.0",
