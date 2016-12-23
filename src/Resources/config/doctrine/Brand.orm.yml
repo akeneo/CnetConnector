@@ -16,22 +16,10 @@ Pim\Bundle\CnetConnectorBundle\Entity\Brand:
         label:
             type: string
             length: 255
-        urlLogo75:
-            type: string
-            length: 255
-        urlLogo200:
-            type: string
-            length: 255
-        urlLogo400:
+        logoUrl:
+            column: logo_url
             type: string
             length: 255
         sortOrder:
             type: integer
-    manyToOne:
-        manufacturer:
-            targetEntity: Pim\Bundle\CnetConnectorBundle\Entity\Manufacturer
-            inversedBy: brands
-            joinColum:
-                name: manufacturer_id
-                referencedColumnName: id
     lifecycleCallbacks: { }

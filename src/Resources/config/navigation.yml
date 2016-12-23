@@ -1,0 +1,12 @@
+oro_menu_config:
+    items:
+        pim_cnet_enrich_brand:
+            label:              'pim_custom_entity.reference_data.brand.menu_entry'
+            route:              'pim_customentity_index'
+            routeParameters:    { customEntityName: brand }
+    tree:
+        application_menu:
+            children:
+                pim_reference_data_tab:
+                    children:
+                        pim_cnet_enrich_brand: ~

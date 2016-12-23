@@ -13,16 +13,7 @@ class Brand extends AbstractCustomEntity implements BrandInterface
     protected $label;
 
     /** @var string */
-    protected $urlLogo75;
-
-    /** @var string */
-    protected $urlLogo200;
-
-    /** @var string */
-    protected $urlLogo400;
-
-    /** @var ManufacturerInterface */
-    protected $manufacturer;
+    protected $logoUrl;
 
     /**
      * {@inheritdoc}
@@ -45,71 +36,17 @@ class Brand extends AbstractCustomEntity implements BrandInterface
     /**
      * {@inheritdoc}
      */
-    public function getUrlLogo75()
+    public function getLogoUrl()
     {
-        return $this->urlLogo75;
+        return $this->logoUrl;
     }
 
     /**
      * {@inheritdoc}
      */
-    public function setUrlLogo75($urlLogo75)
+    public function setLogoUrl($logoUrl)
     {
-        $this->urlLogo75 = $urlLogo75;
-
-        return $this;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getUrlLogo200()
-    {
-        return $this->urlLogo200;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function setUrlLogo200($urlLogo200)
-    {
-        $this->urlLogo200 = $urlLogo200;
-
-        return $this;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getUrlLogo400()
-    {
-        return $this->urlLogo400;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function setUrlLogo400($urlLogo400)
-    {
-        $this->urlLogo400 = $urlLogo400;
-
-        return $this;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getManufacturer()
-    {
-        return $this->manufacturer;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function setManufacturer(ManufacturerInterface $manufacturer = null)
-    {
-        $this->manufacturer = $manufacturer;
+        $this->logoUrl = $logoUrl;
 
         return $this;
     }
