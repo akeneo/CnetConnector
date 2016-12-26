@@ -3,6 +3,10 @@ Pim\Bundle\CnetConnectorBundle\Entity\Brand:
     type: entity
     table: pim_cnet_reference_data_brand
     changeTrackingPolicy: DEFERRED_EXPLICIT
+    indexes:
+        searchcode_idx:
+            columns:
+                - code
     fields:
         id:
             type: integer
@@ -22,4 +26,14 @@ Pim\Bundle\CnetConnectorBundle\Entity\Brand:
             length: 255
         sortOrder:
             type: integer
+        created:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: create
+        updated:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: update
     lifecycleCallbacks: { }

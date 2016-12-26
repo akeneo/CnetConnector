@@ -13,6 +13,14 @@ datagrid:
                 label: label
             logo_url:
                 label: url_logo
+            created:
+                label: Created
+                type: product_value_datetime
+                frontend_type: datetime
+            updated:
+                label: Updated
+                type: product_value_datetime
+                frontend_type: datetime
         filters:
             columns:
                 code:
@@ -23,11 +31,25 @@ datagrid:
                     type: string
                     label: Label
                     data_name: rd.label
+                created:
+                    type:             date
+                    label:            Created
+                    data_name:        rd.created
+                    filter_by_having: true
+                updated:
+                    type:             date
+                    label:            Updated
+                    data_name:        rd.udapted
+                    filter_by_having: true
         sorters:
             columns:
                 code:
                     data_name: rd.code
                 label:
                     data_name: rd.label
+                created:
+                    data_name: rd.created
+                updated:
+                    data_name: rd.udapted
             default:
                 code: '%oro_datagrid.extension.orm_sorter.class%::DIRECTION_ASC'
