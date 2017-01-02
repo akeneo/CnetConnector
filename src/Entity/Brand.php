@@ -5,7 +5,11 @@ namespace Pim\Bundle\CnetConnectorBundle\Entity;
 use Pim\Bundle\CustomEntityBundle\Entity\AbstractCustomEntity;
 
 /**
- * @author Romain Monceau <romain@akeneo.com>
+ * Brand custom entity
+ *
+ * @author    Romain Monceau <romain@akeneo.com>
+ * @copyright 2016 Akeneo SAS (http://www.akeneo.com)
+ * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 class Brand extends AbstractCustomEntity implements BrandInterface
 {
