@@ -1,0 +1,19 @@
+pim_custom_entity.reference_data.brand:
+    menu_entry: Brand
+
+brand:
+    overview: Brands
+    create: Create brand
+    edit: Edit brand
+    delete: Delete brand
+
+btn.create.brand: New brand
+
+flash.brand:
+    created: Brand successfully created
+    updated: Brand successfully updated
+    removed: Brand successfully removed
+
+confirmation.remove.brand: Are you sure you want to delete this brand?
+
+logo_url: Url Logo

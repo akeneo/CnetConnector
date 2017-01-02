@@ -1,0 +1,8 @@
+parameters:
+    pim_cnet.form.type.brand.class: Pim\Bundle\CnetConnectorBundle\Form\Type\BrandType
+
+services:
+    pim_cnet.form.type.brand:
+        class: '%pim_cnet.form.type.brand.class%'
+        tags:
+            - { name: form.type, alias: pim_cnet_enrich_brand }

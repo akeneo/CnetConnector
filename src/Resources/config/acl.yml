@@ -1,0 +1,22 @@
+# Reference data
+## Brand
+
+pim_cnet_enrich_brand_index:
+    type: action
+    label: pim_custom_entity.reference_data.brand.index
+    group_name: pim_custom_entity.acl_group.reference_data
+
+pim_cnet_enrich_brand_create:
+    type: action
+    label: pim_custom_entity.reference_data.brand.create
+    group_name: pim_custom_entity.acl_group.reference_data
+
+pim_cnet_enrich_brand_edit:
+    type: action
+    label: pim_custom_entity.reference_data.brand.edit
+    group_name: pim_custom_entity.acl_group.reference_data
+
+pim_cnet_enrich_brand_delete:
+    type: action
+    label: pim_custom_entity.reference_data.brand.delete
+    group_name: pim_custom_entity.acl_group.reference_data

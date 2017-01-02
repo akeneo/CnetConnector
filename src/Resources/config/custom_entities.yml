@@ -3,8 +3,13 @@ custom_entities:
         entity_class: Pim\Bundle\CnetConnectorBundle\Entity\Brand
         actions:
             index:
+                acl: pim_cnet_enrich_brand_index
                 service: pim_custom_entity.action.index
             edit:
-                form_type: ~
+                acl: pim_cnet_enrich_brand_edit
+                form_type: pim_cnet_enrich_brand
             create:
-                form_type: ~
+                acl: pim_cnet_enrich_brand_create
+                form_type: pim_cnet_enrich_brand
+            delete:
+                acl: pim_cnet_enrich_brand_delete
