@@ -5,7 +5,7 @@ namespace Pim\Bundle\CnetConnectorBundle\Entity;
 use Pim\Bundle\CustomEntityBundle\Entity\AbstractCustomEntity;
 
 /**
- * Brand custom entity
+ * Brand reference data
  *
  * @author    Romain Monceau <romain@akeneo.com>
  * @copyright 2016 Akeneo SAS (http://www.akeneo.com)
