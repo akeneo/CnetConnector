@@ -1,0 +1,7 @@
+Acme\Bundle\AppEEBundle\Model\ProductValue:
+    type: embeddedDocument
+    fields:
+        brand:
+            embedded: true
+            type: entity
+            targetEntity: Pim\Bundle\CnetConnectorBundle\Entity\Brand
