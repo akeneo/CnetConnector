@@ -1,1 +1,3 @@
-<img src="{{ value }}" title="{{ record.getValue('label') }}" width="30" height="30">
+{% if value != '' %}
+    <img src="{{ value }}" title="{{ record.getValue('label') }}" width="30" height="30">
+{% endif %}
