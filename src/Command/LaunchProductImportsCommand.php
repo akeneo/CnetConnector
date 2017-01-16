@@ -9,6 +9,8 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
+ * As CNET provides many CSV files for products
+ *
  * @author Romain Monceau <romain@akeneo.com>
  */
 class LaunchProductImportsCommand extends ContainerAwareCommand

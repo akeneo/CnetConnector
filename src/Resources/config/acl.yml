@@ -1,6 +1,5 @@
 # Reference data
 ## Brand
-
 pim_cnet_enrich_brand_index:
     type: action
     label: pim_custom_entity.reference_data.brand.index
