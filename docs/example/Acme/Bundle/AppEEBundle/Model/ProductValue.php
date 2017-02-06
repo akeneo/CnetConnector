@@ -3,6 +3,7 @@
 namespace Acme\Bundle\AppEEBundle\Model;
 
 use Pim\Bundle\CnetConnectorBundle\Entity\BrandValueTrait;
+use Pim\Bundle\ExtendedAttributeTypeBundle\Model\TextCollectionValueTrait;
 use PimEnterprise\Component\Catalog\Model\ProductValue as PimProductValue;
 
 /**
@@ -13,4 +14,5 @@ use PimEnterprise\Component\Catalog\Model\ProductValue as PimProductValue;
 class ProductValue extends PimProductValue
 {
     use BrandValueTrait;
+    use TextCollectionValueTrait;
 }

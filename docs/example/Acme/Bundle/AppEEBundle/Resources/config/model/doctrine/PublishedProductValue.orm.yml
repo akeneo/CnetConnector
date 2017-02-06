@@ -14,6 +14,11 @@ Acme\Bundle\AppEEBundle\Model\PublishedProductValue:
         integer_idx:
             columns:
                 - value_integer
+    fields:
+        textCollection:
+            type: json_array
+            nullable: true
+            column: value_text_collection
     manyToOne:
         brand:
             targetEntity: Pim\Bundle\CnetConnectorBundle\Entity\Brand
