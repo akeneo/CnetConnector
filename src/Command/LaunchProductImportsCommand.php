@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Process\PhpExecutableFinder;
 
 /**
  * As CNET provides many CSV files for products, here is a command to handle them automatically one per one
@@ -43,7 +44,8 @@ class LaunchProductImportsCommand extends ContainerAwareCommand
 
         $rootDir = $this->getContainer()->getParameter('kernel.root_dir');
         $env = $this->getContainer()->getParameter('kernel.environment');
-        $cmdLauncher = new CommandLauncher($rootDir, $env);
+        $phpPathFinder = new PhpExecutableFinder();
+        $phpDir = $phpPathFinder->find();
 
         foreach (scandir($directoryPath) as $key => $directory) {
             if ($directory !== ".." && $directory !== ".") {
@@ -53,10 +55,12 @@ class LaunchProductImportsCommand extends ContainerAwareCommand
                     $filepath = $dir . DIRECTORY_SEPARATOR . $filepath;
                     if (is_file($filepath)) {
                         $config = sprintf('--config="{\"filePath\":\"%s\"}"', $filepath);
-                        $cmd = sprintf("akeneo:batch:job %s %s", "csv_product_import", $config);
+                        $command = sprintf("akeneo:batch:job %s %s", "csv_product_import", $config);
+                        $cmd = sprintf('%s %s/console --env=%s %s', $phpDir, $rootDir, $env, $command);
 
                         $output->writeln(sprintf('<info>Executing products import for: "%s"</info>', $filepath));
-                        $cmdLauncher->executeForeground($cmd);
+                        $result = exec($cmd);
+                        $output->writeln(sprintf('<info>%s</info>', $result));
                     }
                 }
             }
