@@ -2,6 +2,7 @@ Acme\Bundle\AppEEBundle\Model\PublishedProductValue:
     type: embeddedDocument
     fields:
         brand:
-            embedded: true
             type: entity
             targetEntity: Pim\Bundle\CnetConnectorBundle\Entity\Brand
+        textCollection:
+            type: raw
