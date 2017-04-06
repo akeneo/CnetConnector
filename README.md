@@ -30,8 +30,8 @@ Enable the CnetConnectorBundle in the `app/AppKernel.php` file in the `registerB
     $bundles = [
         // ...
         new Pim\Bundle\CustomEntityBundle\PimCustomEntityBundle(),
-        new Pim\Bundle\CnetConnectorBundle\PimCnetConnectorBundle(),
         new Pim\Bundle\ExtendedAttributeTypeBundle\PimExtendedAttributeTypeBundle(),
+        new Pim\Bundle\CnetConnectorBundle\PimCnetConnectorBundle(),
         new Acme\Bundle\AppBundle\AcmeAppBundle(), // Integration bundle
     ]
 ```
