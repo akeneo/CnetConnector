@@ -1,0 +1,5 @@
+services:
+    pim_cnet.event_subscriber.label_option_length:
+        class: Pim\Bundle\CnetConnectorBundle\EventSubscriber\LabelOptionLengthSubscriber
+        tags:
+            - { name: doctrine.event_subscriber }

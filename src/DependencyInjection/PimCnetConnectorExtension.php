@@ -22,6 +22,7 @@ class PimCnetConnectorExtension extends Extension
     public function load(array $config, ContainerBuilder $container)
     {
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ .'/../Resources/config'));
+        $loader->load('event_subscribers.yml');
         $loader->load('form_types.yml');
         $loader->load('datagrid/attribute_types.yml');
     }
