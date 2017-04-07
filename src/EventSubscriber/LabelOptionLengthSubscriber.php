@@ -4,17 +4,18 @@ namespace Pim\Bundle\CnetConnectorBundle\EventSubscriber;
 
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
-use Pim\Component\Catalog\Model\AttributeOptionValueInterface;
 
 /**
+ * Changes "value" field length to manage with all option translations
  *
  * @author    Romain Monceau <romain@akeneo.com>
  * @copyright 2017 Akeneo SAS (http://www.akeneo.com)
  */
 class LabelOptionLengthSubscriber implements EventSubscriber
 {
-
-
+    /**
+     * {@inheritdoc}
+     */
     public function getSubscribedEvents()
     {
         return [
@@ -23,7 +24,8 @@ class LabelOptionLengthSubscriber implements EventSubscriber
     }
 
     /**
-     * Extends
+     * Changes "value" field length to manage with long option translations
+     *
      * @param LoadClassMetadataEventArgs $lifecycleEventArgs
      */
     public function loadClassMetadata(LoadClassMetadataEventArgs $lifecycleEventArgs)
