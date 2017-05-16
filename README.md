@@ -19,7 +19,6 @@ Please follow also the install documentation of these bundles.
 You can install this bundle with composer (see requirements section):
 
 ```bash
-    composer config repositories.cnet-connector '{"type": "vcs", "url": "git@github.com:akeneo/CnetConnector.git", "branch": "master"}'
     php composer require akeneo/cnet-connector:dev-master
 ```
 Then you should configure CustomEntityBundle adding its routing and registering the bundle (See https://github.com/akeneo-labs/CustomEntityBundle#installation)
