@@ -23,9 +23,9 @@
         }
     ],
     "require": {
-        "akeneo/pim-community-dev": "~1.6.0",
+        "akeneo/pim-community-dev": "1.6.*",
         "akeneo-labs/custom-entity-bundle": "1.9.*",
-        "akeneo/extended-attribute-type": "dev-master@dev"
+        "akeneo/extended-attribute-type": "1.0.*"
     },
     "require-dev": {
         "phpspec/phpspec": "3.0.0",
