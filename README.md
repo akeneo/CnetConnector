@@ -10,6 +10,7 @@ This extension allows to enrich your products data from CNET data provider. Data
 | CNET Connector   | Akeneo PIM Community Edition |
 |:----------------:|:----------------------------:|
 | v1.0             | v1.6.*                       |
+| v1.1             | v1.7.*                       |
 
 CNET connector has dependency on the https://github.com/akeneo-labs/CustomEntityBundle and https://github.com/akeneo/ExtendedAttributeTypeBundle.
 Please follow also the install documentation of these bundles.
