@@ -9,8 +9,8 @@ This extension allows to enrich your products data from CNET data provider. Data
 
 | CNET Connector   | Akeneo PIM Community Edition |
 |:----------------:|:----------------------------:|
-| v1.0             | v1.6.*                       |
 | v1.1             | v1.7.*                       |
+| v1.0             | v1.6.*                       |
 
 CNET connector has dependency on the https://github.com/akeneo-labs/CustomEntityBundle and https://github.com/akeneo/ExtendedAttributeTypeBundle.
 Please follow also the install documentation of these bundles.
@@ -20,7 +20,7 @@ Please follow also the install documentation of these bundles.
 You can install this bundle with composer (see requirements section):
 
 ```bash
-    php composer require akeneo/cnet-connector:dev-master
+    php composer require akeneo/cnet-connector:1.1.*
 ```
 Then you should configure CustomEntityBundle adding its routing and registering the bundle (See https://github.com/akeneo-labs/CustomEntityBundle#installation)
 
