@@ -19,7 +19,7 @@
     ],
     "require": {
         "akeneo/pim-community-dev": "2.*",
-        "akeneo-labs/custom-entity-bundle": "v2.0.2-beta",
+        "akeneo-labs/custom-entity-bundle": "2.0.*",
         "akeneo/extended-attribute-type": "2.0.*"
     },
     "require-dev": {
@@ -39,7 +39,9 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "2.0.x-dev",
+            "1.1": "1.1.x-dev",
+            "1.0": "1.0.x-dev"
         }
     }
 }
