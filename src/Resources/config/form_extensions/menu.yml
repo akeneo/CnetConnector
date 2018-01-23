@@ -1,0 +1,10 @@
+extensions:
+    pim_cnet-menu-reference_data-item-brand:
+        module: pim/menu/item
+        parent: pim-menu-reference_data-navigation-block
+        position: 10
+        config:
+            title: pim_cnet.menu.item.reference_data.brand
+            to: pim_customentity_index
+            routeParams:
+                customEntityName: brand

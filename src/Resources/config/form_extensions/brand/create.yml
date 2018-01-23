@@ -1,0 +1,32 @@
+extensions:
+    pim-brand-create-modal:
+        module: custom_entity/form/creation/modal
+        config:
+            labels:
+               title: pim_custom_entity.create_popin.title
+               subTitle: pim_cnet.menu.item.reference_data.brand
+            picture: illustrations/User.svg
+            successMessage: pim_cnet.message.confirmation.created
+            editRoute: pim_customentity_rest_get
+            postUrl:
+                route: pim_customentity_rest_create
+                parameters:
+                    customEntityName: brand
+
+    pim-brand-create-code:
+        module: pim/form/common/creation/field
+        parent: pim-brand-create-modal
+        targetZone: fields
+        position: 10
+        config:
+            identifier: code
+            label: pim_cnet.brand.field.label.code
+
+    pim-brand-create-label:
+        module: pim/form/common/creation/field
+        parent: pim-brand-create-modal
+        targetZone: fields
+        position: 20
+        config:
+            identifier: label
+            label: pim_cnet.brand.field.label.label
