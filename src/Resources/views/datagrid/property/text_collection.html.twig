@@ -1,9 +1,0 @@
-{% if "product_main_image" == attribute.code and values|length == 1 %}
-    <img src="{{ values[0] }}" title="{{ values[0] }}" style="max-width: 100px; max-height: 100px;" />
-{% else %}
-    <ul>
-        {% for value in values %}
-            <li>{{ value }}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
