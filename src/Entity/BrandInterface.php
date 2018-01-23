@@ -2,6 +2,8 @@
 
 namespace Pim\Bundle\CnetConnectorBundle\Entity;
 
+use Pim\Component\ReferenceData\Model\ReferenceDataInterface;
+
 /**
  * Interface for brand entity
  *
@@ -9,7 +11,7 @@ namespace Pim\Bundle\CnetConnectorBundle\Entity;
  * @copyright 2016 Akeneo SAS (http://www.akeneo.com)
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-interface BrandInterface
+interface BrandInterface extends ReferenceDataInterface
 {
     /**
      * @return string
