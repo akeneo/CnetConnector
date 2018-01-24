@@ -69,34 +69,3 @@ datagrid:
                     data_name: rd.logoUrl
             default:
                 code: '%oro_datagrid.extension.orm_sorter.class%::DIRECTION_ASC'
-
-        mass_actions:
-            delete:
-                type: delete
-                label: pim.grid.mass_action.delete
-                entity_name: brand
-                acl_resource: pim_cnet_enrich_brand_delete
-                handler: mass_delete
-                className: 'AknButton AknButton--important AknButtonList-item'
-                messages:
-                    confirm_title: pim_datagrid.mass_action.delete.confirm_title
-                    confirm_content: pim_cnet.mass_action.delete.confirm_content
-                    confirm_ok: pim_cnet.mass_action.brand.delete.confirm_ok
-                    success: pim_datagrid.mass_action.brand.delete.success
-                    error: pim_datagrid.mass_action.barnd.delete.error
-                    empty_selection: pim_datagrid.mass_action.delete.empty_selection
-
-            quick_export_csv:
-                type: export
-                label: pim.grid.mass_action.quick_export.csv_all
-                className:  'AknButton AknButton--action AknButtonList-item'
-                handler: custom_quick_export
-                route: pim_customentity_quickexport
-                route_parameters:
-                    customEntityName: brand
-                    _format: csv
-                    _contentType: text/csv
-                context:
-                    withHeader: true
-                messages:
-                    empty_selection: pim_datagrid.mass_action.delete.empty_selection

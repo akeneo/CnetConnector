@@ -19,7 +19,7 @@
     ],
     "require": {
         "akeneo/pim-community-dev": "2.*",
-        "akeneo-labs/custom-entity-bundle": "2.0.*",
+        "akeneo-labs/custom-entity-bundle": "2.*",
         "akeneo/extended-attribute-type": "2.0.*"
     },
     "require-dev": {
