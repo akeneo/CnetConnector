@@ -49,7 +49,7 @@ From an existing PIM instance, you will have to update your database schema and 
     php bin/console cache:clear --env=prod --no-warmup
     php bin/console doctrine:schema:update --env=prod --force
     php bin/console --env=prod pim:installer:assets --symlink --clean
-    yarn run webapck
+    yarn run webpack
 ```
 
 Otherwise, you can proceed with the PIM's normal install process.
