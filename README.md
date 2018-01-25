@@ -44,10 +44,12 @@ pim_reference_data:
         type: simple
 ```
 
-From an existing PIM instance, you will have to update your database schema:
+From an existing PIM instance, you will have to update your database schema and regenerate your front assets:
 ```bash
     php bin/console cache:clear --env=prod --no-warmup
     php bin/console doctrine:schema:update --env=prod --force
+    php bin/console --env=prod pim:installer:assets --symlink --clean
+    yarn run webapck
 ```
 
 Otherwise, you can proceed with the PIM's normal install process.
