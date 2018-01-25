@@ -58,8 +58,16 @@ class Brand extends AbstractCustomEntity implements BrandInterface
     /**
      * {@inheritdoc}
      */
-    public function getCustomEntityName()
+    public function getCustomEntityName(): string
     {
         return 'brand';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public static function getLabelProperty(): string
+    {
+        return 'label';
     }
 }

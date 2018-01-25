@@ -24,6 +24,7 @@ Pim\Bundle\CnetConnectorBundle\Entity\Brand:
             column: logo_url
             type: string
             length: 255
+            nullable: true
         sortOrder:
             type: integer
         created:

@@ -1,0 +1,8 @@
+Pim\Bundle\CnetConnectorBundle\Entity\Brand:
+    properties:
+        code:
+            - NotBlank: ~
+        label:
+            - NotBlank: ~
+        logoUrl:
+            - Url: ~

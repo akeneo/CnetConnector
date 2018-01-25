@@ -1,0 +1,29 @@
+pim_cnet:
+    menu.item.reference_data:
+        brand: Brands
+
+    brand:
+        field.label:
+            code: Code
+            label: Label
+            logo_url: Logo URL
+        index_title: "] -Inf, 1] {{ count }} Brand|] 1, Inf [{{ count }} Brands"
+        selected: brand(s) selected
+
+    message:
+        confirmation:
+            remove.brand: Do you really want to delete this brand?
+            removed: The brand was successfully deleted
+            created: The brand was successfully created
+
+    mass_action.brand:
+        delete:
+            confirm_content: Are you sure you want to delete the selected brands?
+            success: Selected brands were successfully deleted
+            errror: Selected brands could not be deleted
+
+confirmation.remove.brand: Do you really want to delete this brand?
+flash.brand.removed: The brand was successfully deleted
+
+error.removing:
+    brand: The brand could not be removed

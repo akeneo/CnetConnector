@@ -1,0 +1,6 @@
+services:
+    pim_cnet.normalizer.standard.brand:
+        public: false
+        class: Pim\Bundle\CnetConnectorBundle\Normalizers\BrandNormalizer
+        tags:
+            - { name: pim_serializer.normalizer, priority: 200 }

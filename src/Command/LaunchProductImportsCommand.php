@@ -21,7 +21,7 @@ class LaunchProductImportsCommand extends ContainerAwareCommand
     static protected $parallelJobs = 0;
 
     /** @var string */
-    protected $rootDir;
+    protected $binDir;
 
     /** @var string */
     protected $env;
@@ -79,7 +79,7 @@ class LaunchProductImportsCommand extends ContainerAwareCommand
     {
         parent::initialize($input, $output);
 
-        $this->rootDir = $this->getContainer()->getParameter('kernel.root_dir');
+        $this->binDir = $this->getContainer()->getParameter('kernel.project_dir') . DIRECTORY_SEPARATOR . 'bin';
         $this->env = $this->getContainer()->getParameter('kernel.environment');
         $phpPathFinder = new PhpExecutableFinder();
         $this->phpDir = $phpPathFinder->find();
@@ -94,12 +94,12 @@ class LaunchProductImportsCommand extends ContainerAwareCommand
     {
         $config = sprintf('--config="{\"filePath\":\"%s\"}"', $filepath);
         $command = sprintf("akeneo:batch:job %s %s", "csv_product_import", $config);
-        $cmd = sprintf('%s %s/console --env=%s %s', $this->phpDir, $this->rootDir, $this->env, $command);
+        $cmd = sprintf('%s %s/console --env=%s %s', $this->phpDir, $this->binDir, $this->env, $command);
 
         $output->writeln(sprintf('<info>Executing products import for: "%s"</info>', $filepath));
         if (++static::$parallelJobs % $this->maxParallelJobs === 0) {
             $result = exec($cmd);
-            while (exec('ps -aux | grep akeneo:batch | wc -l') <= 1) {
+            while (exec('ps aux | grep akeneo:batch | wc -l') <= 1) {
                 sleep(10);
             }
         } else {

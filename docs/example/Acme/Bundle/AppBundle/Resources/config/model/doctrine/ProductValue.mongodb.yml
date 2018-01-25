@@ -1,8 +1,0 @@
-Acme\Bundle\AppBundle\Model\ProductValue:
-    type: embeddedDocument
-    fields:
-        brand:
-            type: entity
-            targetEntity: Pim\Bundle\CnetConnectorBundle\Entity\Brand
-        textCollection:
-            type: raw
