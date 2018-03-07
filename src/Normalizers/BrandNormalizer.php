@@ -3,7 +3,6 @@
 namespace Pim\Bundle\CnetConnectorBundle\Normalizers;
 
 use Pim\Bundle\CnetConnectorBundle\Entity\BrandInterface;
-use Pim\Bundle\CustomEntityBundle\Entity\AbstractCustomEntity;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 use Symfony\Component\Serializer\SerializerAwareInterface;
 use Symfony\Component\Serializer\SerializerAwareTrait;

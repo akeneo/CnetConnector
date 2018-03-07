@@ -18,7 +18,7 @@ use Symfony\Component\Process\PhpExecutableFinder;
 class LaunchProductImportsCommand extends ContainerAwareCommand
 {
     /** @var int */
-    static protected $parallelJobs = 0;
+    protected static $parallelJobs = 0;
 
     /** @var string */
     protected $binDir;
