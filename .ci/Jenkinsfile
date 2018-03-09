@@ -30,13 +30,9 @@ def installExtension(pimEdition, extensionPath) {
 stage("Build") {
     milestone 1
     if (env.BRANCH_NAME =~ /^PR-/) {
-        userInput = input(message: 'Launch tests?', parameters: [
+        launchUnitTests = input(message: 'Launch tests?', parameters: [
             choice(choices: 'yes\nno', description: 'Run unit tests', name: 'launchUnitTests')
         ])
-
-        launchUnitTests = userInput['launchUnitTests']
-        pimVersions = userInput['pimVersions'].tokenize(',')
-        pimEditions = userInput['pimEditions'].tokenize(',')
     }
 
     milestone 2
